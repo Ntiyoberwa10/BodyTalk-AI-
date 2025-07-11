@@ -1,0 +1,49 @@
+{
+    "nodes": [
+        {
+            "id": "prompt-node",
+            "type": "Prompt",
+            "template": "L'utilisateur fait ce geste : {{gesture}}. Que veut-il dire et quelle r\u00e9ponse peut-on lui donner pour l'aider ?",
+            "fields": {
+                "variables": [
+                    "gesture"
+                ]
+            },
+            "position": {
+                "x": 100,
+                "y": 200
+            }
+        },
+        {
+            "id": "llm-node",
+            "type": "LLM",
+            "llm_type": "ChatOpenAI",
+            "position": {
+                "x": 300,
+                "y": 200
+            }
+        },
+        {
+            "id": "output-node",
+            "type": "Output",
+            "position": {
+                "x": 500,
+                "y": 200
+            }
+        }
+    ],
+    "edges": [
+        {
+            "source": "prompt-node",
+            "target": "llm-node"
+        },
+        {
+            "source": "llm-node",
+            "target": "output-node"
+        }
+    ],
+    "metadata": {
+        "name": "BodyTalk AI",
+        "description": "Chatbot IA qui comprend le langage corporel et r\u00e9pond aux personnes non verbales."
+    }
+}
