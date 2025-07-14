@@ -1,0 +1,24 @@
+# BodyTalk-AI 🤖🧠
+
+**BodyTalk-AI** est un assistant personnel conçu pour aider les personnes handicapées qui ne peuvent pas parler, mais peuvent communiquer par des signaux corporels (ex : cligner des yeux, bouger la tête, etc.).
+
+L'utilisateur écrit un signal corporel dans un champ texte, et l'IA répond avec une interprétation et une action.
+
+## Objectifs
+
+- Aider à la communication alternative
+- Participer aux compétitions Langflow AI 2025/2026
+
+## Fichiers importants
+
+- `bodytalk.flow.json` : le fichier du chatbot pour Langflow
+- `README.md` : ce fichier de présentation
+- `app.py` *(optionnel)* : si tu veux avoir un script Python local
+
+## Démo
+
+*(À venir)*
+
+## Auteur
+
+Dicard Ntiyoberwa
